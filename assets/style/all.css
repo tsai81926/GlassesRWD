@@ -1,0 +1,1685 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  /*消除底部留白(效果較display-block好)*/ }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/*Color*/
+/*Font-size*/
+/*Color*/
+/*Font-size*/
+/*斷點設計*/
+.container {
+  max-width: 1140px;
+  /*width 1110px + gutter 30px(網格白色padding左右各推 15px)*/
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.header-container {
+  max-width: 1724px;
+  padding: 0 88px; }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px; }
+  .header-container, footer {
+    padding: 0 39px; } }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 360px; }
+  .footer {
+    padding: 0 15px; } }
+
+/*字型大小*/
+h1 {
+  font-size: 64px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  /*消除底線*/ }
+
+/*Color*/
+/*Font-size*/
+/*Color*/
+/*Font-size*/
+/*字型常用樣式*/
+/*常用工具列*/
+/*行高*/
+.lh-54p {
+  line-height: 54px; }
+
+.lh-12 {
+  line-height: 96px; }
+
+/*內距*/
+.pt-2 {
+  padding-top: 16px; }
+
+.pt-4 {
+  padding-top: 32px; }
+
+.pt-30p {
+  padding-top: 30px; }
+
+.pt-38p {
+  padding-top: 38px; }
+
+.pt-44p {
+  padding-top: 44px; }
+
+.pt-60p {
+  padding-top: 60px; }
+
+.pt-348p {
+  padding-top: 348px; }
+
+.pb-1 {
+  padding-bottom: 8px; }
+
+.pb-2 {
+  padding-bottom: 16px; }
+
+.pb-3 {
+  padding-bottom: 24px; }
+
+.pl-1 {
+  padding-left: 8px; }
+
+.pl-2 {
+  padding-left: 16px; }
+
+.pl-3 {
+  padding-left: 24px; }
+
+.pl-30p {
+  padding-left: 30px; }
+
+.pl-8 {
+  padding-left: 64px; }
+
+.pl-11 {
+  padding-left: 88px; }
+
+.pr-1 {
+  padding-right: 8px; }
+
+.pr-20p {
+  padding-right: 20px; }
+
+.pr-22p {
+  padding-right: 22px; }
+
+.pr-3 {
+  padding-right: 24px; }
+
+.pr-30p {
+  padding-right: 30px; }
+
+.pr-4 {
+  padding-right: 32px; }
+
+.pr-6 {
+  padding-right: 48px; }
+
+.pr-7 {
+  padding-right: 56px; }
+
+.pr-8 {
+  padding-right: 64px; }
+
+.pr-11 {
+  padding-right: 88px; }
+
+/*外距*/
+.mt-1 {
+  margin-top: 8px; }
+
+.mt-2 {
+  margin-top: 16px; }
+
+.mt-4 {
+  margin-top: 32px; }
+
+.mb-1 {
+  margin-bottom: 8px; }
+
+.mb-2 {
+  margin-bottom: 16px; }
+
+.mb-20p {
+  margin-bottom: 20px; }
+
+.mb-3 {
+  margin-bottom: 24px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.mb-5 {
+  margin-bottom: 40px; }
+
+.mb-6 {
+  margin-bottom: 48px; }
+
+.mb-60p {
+  margin-bottom: 60px; }
+
+.mb-10 {
+  margin-bottom: 80px; }
+
+.mb-140p {
+  margin-bottom: 140px; }
+
+.ml-11 {
+  margin-right: 88px; }
+
+.mr-3 {
+  margin-right: 24px; }
+
+.mr-5 {
+  margin-right: 40px; }
+
+.mr-7 {
+  margin-right: 56px; }
+
+.mr-11 {
+  margin-right: 88px; }
+
+/*行高*/
+.lh-3 {
+  line-height: 24px; }
+
+.lh-30p {
+  line-height: 30px; }
+
+.lh-6 {
+  line-height: 48px; }
+
+.lh-9 {
+  line-height: 72px; }
+
+.lh-12 {
+  line-height: 96px; }
+
+/*Icon設定區*/
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: bold;
+  color: #650300;
+  font-size: 83.33px; }
+
+/* Pad常用工具 */
+/*pad內距設定*/
+@media (max-width: 768px) {
+  .pt-pad-1 {
+    padding-top: 8px; } }
+
+@media (max-width: 768px) {
+  .pt-pad-6 {
+    padding-top: 48px; } }
+
+@media (max-width: 768px) {
+  .pl-pad-1 {
+    padding-left: 8px; } }
+
+@media (max-width: 768px) {
+  .pl-pad-2 {
+    padding-left: 16px; } }
+
+@media (max-width: 768px) {
+  .pr-pad-30p {
+    padding-right: 30px; } }
+
+/*pad消除內距*/
+@media (max-width: 768px) {
+  .pd-pad-n {
+    padding: 0; } }
+
+/*pad外距設定*/
+@media (max-width: 768px) {
+  .mb-pad-1 {
+    margin-bottom: 8px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-5 {
+    margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-7 {
+    margin-bottom: 56px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-1 {
+    margin-top: 8px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-12p {
+    margin-top: 12px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-2 {
+    margin-top: 16px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-18p {
+    margin-top: 18px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-3 {
+    margin-top: 24px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-4 {
+    margin-top: 32px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-5 {
+    margin-bottom: 40px; } }
+
+/*pad行高設定*/
+@media (max-width: 768px) {
+  .lh-pad-30p {
+    line-height: 30px; } }
+
+@media (max-width: 768px) {
+  .lh-pad-9 {
+    line-height: 72px; } }
+
+/*mobile常用工具*/
+/*mobile內距設定*/
+@media (max-width: 375px) {
+  .pt-cel-1 {
+    padding-top: 8px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-10p {
+    padding-top: 10px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-2 {
+    padding-top: 16px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-164p {
+    padding-top: 164px; } }
+
+@media (max-width: 375px) {
+  .ptb-cel-1 {
+    padding: 8px 0px; } }
+
+@media (max-width: 375px) {
+  .pl-cel-4p {
+    padding-left: 4px; } }
+
+/*mobile外距設定*/
+@media (max-width: 375px) {
+  .mt-cel-1 {
+    margin-top: 8px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-20p {
+    margin-bottom: 20px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-4 {
+    margin-bottom: 32px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-5 {
+    margin-bottom: 40px; } }
+
+/*消除外距設定*/
+@media (max-width: 375px) {
+  .m-cel-n {
+    margin: 0; } }
+
+@media (max-width: 375px) {
+  .mt-cel-2 {
+    margin-top: 16px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-2 {
+    margin-bottom: 16px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-3 {
+    margin-bottom: 24px; } }
+
+/*mobile行高設定*/
+@media (max-width: 375px) {
+  .lh-cel-30p {
+    line-height: 30px; } }
+
+/*Color*/
+/*Font-size*/
+/*Color*/
+/*Font-size*/
+/*字型常用樣式*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  /*消除底部留白(效果較display-block好)*/ }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/*Color*/
+/*Font-size*/
+/*斷點設計*/
+.container {
+  max-width: 1140px;
+  /*width 1110px + gutter 30px(網格白色padding左右各推 15px)*/
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.header-container {
+  max-width: 1724px;
+  padding: 0 88px; }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px; }
+  .header-container, footer {
+    padding: 0 39px; } }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 360px; }
+  .footer {
+    padding: 0 15px; } }
+
+/*字型大小*/
+h1 {
+  font-size: 64px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  /*消除底線*/ }
+
+/*Color*/
+/*Font-size*/
+/*Color*/
+/*Font-size*/
+/*字型常用樣式*/
+/*常用工具列*/
+/*行高*/
+.lh-54p {
+  line-height: 54px; }
+
+.lh-12 {
+  line-height: 96px; }
+
+/*內距*/
+.pt-2 {
+  padding-top: 16px; }
+
+.pt-4 {
+  padding-top: 32px; }
+
+.pt-30p {
+  padding-top: 30px; }
+
+.pt-38p {
+  padding-top: 38px; }
+
+.pt-44p {
+  padding-top: 44px; }
+
+.pt-60p {
+  padding-top: 60px; }
+
+.pt-348p {
+  padding-top: 348px; }
+
+.pb-1 {
+  padding-bottom: 8px; }
+
+.pb-2 {
+  padding-bottom: 16px; }
+
+.pb-3 {
+  padding-bottom: 24px; }
+
+.pl-1 {
+  padding-left: 8px; }
+
+.pl-2 {
+  padding-left: 16px; }
+
+.pl-3 {
+  padding-left: 24px; }
+
+.pl-30p {
+  padding-left: 30px; }
+
+.pl-8 {
+  padding-left: 64px; }
+
+.pl-11 {
+  padding-left: 88px; }
+
+.pr-1 {
+  padding-right: 8px; }
+
+.pr-20p {
+  padding-right: 20px; }
+
+.pr-22p {
+  padding-right: 22px; }
+
+.pr-3 {
+  padding-right: 24px; }
+
+.pr-30p {
+  padding-right: 30px; }
+
+.pr-4 {
+  padding-right: 32px; }
+
+.pr-6 {
+  padding-right: 48px; }
+
+.pr-7 {
+  padding-right: 56px; }
+
+.pr-8 {
+  padding-right: 64px; }
+
+.pr-11 {
+  padding-right: 88px; }
+
+/*外距*/
+.mt-1 {
+  margin-top: 8px; }
+
+.mt-2 {
+  margin-top: 16px; }
+
+.mt-4 {
+  margin-top: 32px; }
+
+.mb-1 {
+  margin-bottom: 8px; }
+
+.mb-2 {
+  margin-bottom: 16px; }
+
+.mb-20p {
+  margin-bottom: 20px; }
+
+.mb-3 {
+  margin-bottom: 24px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.mb-5 {
+  margin-bottom: 40px; }
+
+.mb-6 {
+  margin-bottom: 48px; }
+
+.mb-60p {
+  margin-bottom: 60px; }
+
+.mb-10 {
+  margin-bottom: 80px; }
+
+.mb-140p {
+  margin-bottom: 140px; }
+
+.ml-11 {
+  margin-right: 88px; }
+
+.mr-3 {
+  margin-right: 24px; }
+
+.mr-5 {
+  margin-right: 40px; }
+
+.mr-7 {
+  margin-right: 56px; }
+
+.mr-11 {
+  margin-right: 88px; }
+
+/*行高*/
+.lh-3 {
+  line-height: 24px; }
+
+.lh-30p {
+  line-height: 30px; }
+
+.lh-6 {
+  line-height: 48px; }
+
+.lh-9 {
+  line-height: 72px; }
+
+.lh-12 {
+  line-height: 96px; }
+
+/*Icon設定區*/
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: bold;
+  color: #650300;
+  font-size: 83.33px; }
+
+/* Pad常用工具 */
+/*pad內距設定*/
+@media (max-width: 768px) {
+  .pt-pad-1 {
+    padding-top: 8px; } }
+
+@media (max-width: 768px) {
+  .pt-pad-6 {
+    padding-top: 48px; } }
+
+@media (max-width: 768px) {
+  .pl-pad-1 {
+    padding-left: 8px; } }
+
+@media (max-width: 768px) {
+  .pl-pad-2 {
+    padding-left: 16px; } }
+
+@media (max-width: 768px) {
+  .pr-pad-30p {
+    padding-right: 30px; } }
+
+/*pad消除內距*/
+@media (max-width: 768px) {
+  .pd-pad-n {
+    padding: 0; } }
+
+/*pad外距設定*/
+@media (max-width: 768px) {
+  .mb-pad-1 {
+    margin-bottom: 8px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-5 {
+    margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-7 {
+    margin-bottom: 56px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-1 {
+    margin-top: 8px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-12p {
+    margin-top: 12px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-2 {
+    margin-top: 16px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-18p {
+    margin-top: 18px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-3 {
+    margin-top: 24px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-4 {
+    margin-top: 32px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-5 {
+    margin-bottom: 40px; } }
+
+/*pad行高設定*/
+@media (max-width: 768px) {
+  .lh-pad-30p {
+    line-height: 30px; } }
+
+@media (max-width: 768px) {
+  .lh-pad-9 {
+    line-height: 72px; } }
+
+/*mobile常用工具*/
+/*mobile內距設定*/
+@media (max-width: 375px) {
+  .pt-cel-1 {
+    padding-top: 8px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-10p {
+    padding-top: 10px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-2 {
+    padding-top: 16px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-164p {
+    padding-top: 164px; } }
+
+@media (max-width: 375px) {
+  .ptb-cel-1 {
+    padding: 8px 0px; } }
+
+@media (max-width: 375px) {
+  .pl-cel-4p {
+    padding-left: 4px; } }
+
+/*mobile外距設定*/
+@media (max-width: 375px) {
+  .mt-cel-1 {
+    margin-top: 8px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-20p {
+    margin-bottom: 20px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-4 {
+    margin-bottom: 32px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-5 {
+    margin-bottom: 40px; } }
+
+/*消除外距設定*/
+@media (max-width: 375px) {
+  .m-cel-n {
+    margin: 0; } }
+
+@media (max-width: 375px) {
+  .mt-cel-2 {
+    margin-top: 16px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-2 {
+    margin-bottom: 16px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-3 {
+    margin-bottom: 24px; } }
+
+/*mobile行高設定*/
+@media (max-width: 375px) {
+  .lh-cel-30p {
+    line-height: 30px; } }
+
+.header {
+  background-color: #AA0601;
+  height: 108px; }
+  @media (max-width: 375px) {
+    .header {
+      height: 140px; } }
+  .header .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 375px) {
+      .header .header-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding: 0px; } }
+  .header .shop-logo img {
+    max-width: 80px;
+    height: 48.57px; }
+  @media (max-width: 375px) {
+    .header .shop-logo {
+      max-width: 100%;
+      margin: 0 auto; } }
+  .header .head-menu {
+    width: 492px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 768px) {
+      .header .head-menu {
+        width: 420px; } }
+    @media (max-width: 375px) {
+      .header .head-menu {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        text-align: center; } }
+    @media (max-width: 375px) {
+      .header .head-menu li {
+        width: 50%;
+        height: 36px;
+        border: 1px solid #ffff; } }
+    .header .head-menu a {
+      color: #ffff;
+      font-size: 20px; }
+      .header .head-menu a:hover {
+        font-size: 24px;
+        opacity: 0.5;
+        /*透明度*/ }
+
+.footer {
+  color: #ffff;
+  font-size: 16px;
+  height: 333px;
+  background-color: #AA0601; }
+  @media (max-width: 768px) {
+    .footer {
+      height: 241px; } }
+  @media (max-width: 375px) {
+    .footer {
+      height: 212px; } }
+  .footer .footer-upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 375px) {
+      .footer .footer-upper {
+        float: right; } }
+    .footer .footer-upper .footer-menu {
+      width: 464px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-size: 16px; }
+      @media (max-width: 768px) {
+        .footer .footer-upper .footer-menu {
+          width: 432px; } }
+      @media (max-width: 375px) {
+        .footer .footer-upper .footer-menu {
+          display: none; } }
+    .footer .footer-upper .social-imgs {
+      width: 208px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 768px) {
+        .footer .footer-upper .social-imgs {
+          width: 120px; } }
+      @media (max-width: 768px) {
+        .footer .footer-upper .social-imgs img {
+          width: 24px;
+          height: 24px; } }
+  .footer .footer-central {
+    border-bottom: 1px solid #ffff; }
+    .footer .footer-central li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 768px) {
+        .footer .footer-central li img {
+          width: 24px;
+          height: 24px; } }
+      @media (max-width: 375px) {
+        .footer .footer-central li img {
+          width: 20px;
+          height: 20px; } }
+      .footer .footer-central li span {
+        font-size: 36px; }
+        @media (max-width: 768px) {
+          .footer .footer-central li span {
+            font-size: 20px;
+            margin-top: 16px; } }
+        @media (max-width: 375px) {
+          .footer .footer-central li span {
+            font-size: 16px; } }
+  .footer .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 375px) {
+      .footer .footer-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        font-size: 14px; } }
+    .footer .footer-bottom .private {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-size: 14px; }
+      @media (max-width: 768px) {
+        .footer .footer-bottom .private {
+          width: 21%; } }
+      @media (max-width: 375px) {
+        .footer .footer-bottom .private {
+          width: 20%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          white-space: nowrap; } }
+
+/*Color*/
+/*Font-size*/
+/*Color*/
+/*Font-size*/
+/*字型常用樣式*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  /*消除底部留白(效果較display-block好)*/ }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/*Color*/
+/*Font-size*/
+/*斷點設計*/
+.container {
+  max-width: 1140px;
+  /*width 1110px + gutter 30px(網格白色padding左右各推 15px)*/
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.header-container {
+  max-width: 1724px;
+  padding: 0 88px; }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px; }
+  .header-container, footer {
+    padding: 0 39px; } }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 360px; }
+  .footer {
+    padding: 0 15px; } }
+
+/*字型大小*/
+h1 {
+  font-size: 64px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  /*消除底線*/ }
+
+/*Color*/
+/*Font-size*/
+/*Color*/
+/*Font-size*/
+/*字型常用樣式*/
+/*常用工具列*/
+/*行高*/
+.lh-54p {
+  line-height: 54px; }
+
+.lh-12 {
+  line-height: 96px; }
+
+/*內距*/
+.pt-2 {
+  padding-top: 16px; }
+
+.pt-4 {
+  padding-top: 32px; }
+
+.pt-30p {
+  padding-top: 30px; }
+
+.pt-38p {
+  padding-top: 38px; }
+
+.pt-44p {
+  padding-top: 44px; }
+
+.pt-60p {
+  padding-top: 60px; }
+
+.pt-348p {
+  padding-top: 348px; }
+
+.pb-1 {
+  padding-bottom: 8px; }
+
+.pb-2 {
+  padding-bottom: 16px; }
+
+.pb-3 {
+  padding-bottom: 24px; }
+
+.pl-1 {
+  padding-left: 8px; }
+
+.pl-2 {
+  padding-left: 16px; }
+
+.pl-3 {
+  padding-left: 24px; }
+
+.pl-30p {
+  padding-left: 30px; }
+
+.pl-8 {
+  padding-left: 64px; }
+
+.pl-11 {
+  padding-left: 88px; }
+
+.pr-1 {
+  padding-right: 8px; }
+
+.pr-20p {
+  padding-right: 20px; }
+
+.pr-22p {
+  padding-right: 22px; }
+
+.pr-3 {
+  padding-right: 24px; }
+
+.pr-30p {
+  padding-right: 30px; }
+
+.pr-4 {
+  padding-right: 32px; }
+
+.pr-6 {
+  padding-right: 48px; }
+
+.pr-7 {
+  padding-right: 56px; }
+
+.pr-8 {
+  padding-right: 64px; }
+
+.pr-11 {
+  padding-right: 88px; }
+
+/*外距*/
+.mt-1 {
+  margin-top: 8px; }
+
+.mt-2 {
+  margin-top: 16px; }
+
+.mt-4 {
+  margin-top: 32px; }
+
+.mb-1 {
+  margin-bottom: 8px; }
+
+.mb-2 {
+  margin-bottom: 16px; }
+
+.mb-20p {
+  margin-bottom: 20px; }
+
+.mb-3 {
+  margin-bottom: 24px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.mb-5 {
+  margin-bottom: 40px; }
+
+.mb-6 {
+  margin-bottom: 48px; }
+
+.mb-60p {
+  margin-bottom: 60px; }
+
+.mb-10 {
+  margin-bottom: 80px; }
+
+.mb-140p {
+  margin-bottom: 140px; }
+
+.ml-11 {
+  margin-right: 88px; }
+
+.mr-3 {
+  margin-right: 24px; }
+
+.mr-5 {
+  margin-right: 40px; }
+
+.mr-7 {
+  margin-right: 56px; }
+
+.mr-11 {
+  margin-right: 88px; }
+
+/*行高*/
+.lh-3 {
+  line-height: 24px; }
+
+.lh-30p {
+  line-height: 30px; }
+
+.lh-6 {
+  line-height: 48px; }
+
+.lh-9 {
+  line-height: 72px; }
+
+.lh-12 {
+  line-height: 96px; }
+
+/*Icon設定區*/
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: bold;
+  color: #650300;
+  font-size: 83.33px; }
+
+/* Pad常用工具 */
+/*pad內距設定*/
+@media (max-width: 768px) {
+  .pt-pad-1 {
+    padding-top: 8px; } }
+
+@media (max-width: 768px) {
+  .pt-pad-6 {
+    padding-top: 48px; } }
+
+@media (max-width: 768px) {
+  .pl-pad-1 {
+    padding-left: 8px; } }
+
+@media (max-width: 768px) {
+  .pl-pad-2 {
+    padding-left: 16px; } }
+
+@media (max-width: 768px) {
+  .pr-pad-30p {
+    padding-right: 30px; } }
+
+/*pad消除內距*/
+@media (max-width: 768px) {
+  .pd-pad-n {
+    padding: 0; } }
+
+/*pad外距設定*/
+@media (max-width: 768px) {
+  .mb-pad-1 {
+    margin-bottom: 8px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-5 {
+    margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-7 {
+    margin-bottom: 56px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-1 {
+    margin-top: 8px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-12p {
+    margin-top: 12px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-2 {
+    margin-top: 16px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-18p {
+    margin-top: 18px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-3 {
+    margin-top: 24px; } }
+
+@media (max-width: 768px) {
+  .mt-pad-4 {
+    margin-top: 32px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-5 {
+    margin-bottom: 40px; } }
+
+/*pad行高設定*/
+@media (max-width: 768px) {
+  .lh-pad-30p {
+    line-height: 30px; } }
+
+@media (max-width: 768px) {
+  .lh-pad-9 {
+    line-height: 72px; } }
+
+/*mobile常用工具*/
+/*mobile內距設定*/
+@media (max-width: 375px) {
+  .pt-cel-1 {
+    padding-top: 8px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-10p {
+    padding-top: 10px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-2 {
+    padding-top: 16px; } }
+
+@media (max-width: 375px) {
+  .pt-cel-164p {
+    padding-top: 164px; } }
+
+@media (max-width: 375px) {
+  .ptb-cel-1 {
+    padding: 8px 0px; } }
+
+@media (max-width: 375px) {
+  .pl-cel-4p {
+    padding-left: 4px; } }
+
+/*mobile外距設定*/
+@media (max-width: 375px) {
+  .mt-cel-1 {
+    margin-top: 8px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-20p {
+    margin-bottom: 20px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-4 {
+    margin-bottom: 32px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-5 {
+    margin-bottom: 40px; } }
+
+/*消除外距設定*/
+@media (max-width: 375px) {
+  .m-cel-n {
+    margin: 0; } }
+
+@media (max-width: 375px) {
+  .mt-cel-2 {
+    margin-top: 16px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-2 {
+    margin-bottom: 16px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-3 {
+    margin-bottom: 24px; } }
+
+/*mobile行高設定*/
+@media (max-width: 375px) {
+  .lh-cel-30p {
+    line-height: 30px; } }
+
+/*首頁大背景*/
+.head-banner {
+  height: 840px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media (max-width: 375px) {
+    .head-banner {
+      height: 394px; } }
+  .head-banner .head-banner-text {
+    text-align: right;
+    color: #650300;
+    font-weight: bold; }
+    @media (max-width: 375px) {
+      .head-banner .head-banner-text h3 {
+        font-size: 16px; } }
+    @media (max-width: 375px) {
+      .head-banner .head-banner-text h1 {
+        font-size: 32px; } }
+
+/*用專業的心，做專業的事*/
+@media (max-width: 768px) {
+  .professional {
+    height: 668px; } }
+
+@media (max-width: 375px) {
+  .professional {
+    height: 1099px; } }
+
+.professional h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #650300; }
+  @media (max-width: 768px) {
+    .professional h2 {
+      font-size: 32px; } }
+  @media (max-width: 375px) {
+    .professional h2 {
+      font-size: 24px; } }
+
+.professional-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 768px) {
+    .professional-items {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (max-width: 375px) {
+    .professional-items {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .professional-items li {
+    max-width: 23%;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .professional-items li {
+        max-width: 50%;
+        height: 33%;
+        /*223px(li的個別pad總高) / 668px(professional的pad總高) = 33*/ } }
+    @media (max-width: 375px) {
+      .professional-items li {
+        max-width: 100%; } }
+    .professional-items li h4 {
+      font-weight: bold;
+      color: #650300; }
+    .professional-items li p {
+      text-align: left;
+      line-height: 24px; }
+      @media (max-width: 768px) {
+        .professional-items li p {
+          max-width: 70%;
+          margin: 0 auto; } }
+
+/*經典系列鏡框*/
+@media (max-width: 768px) {
+  .classic {
+    height: 654px; } }
+
+.classic h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #650300; }
+
+.classic-items img {
+  width: 57%; }
+  @media (max-width: 768px) {
+    .classic-items img {
+      width: 61%;
+      /*設px沒有縮放*/
+      height: 168px; } }
+
+.classic-items p {
+  width: 41%;
+  font-size: 48px;
+  font-weight: bold;
+  color: #AA0601; }
+  @media (max-width: 768px) {
+    .classic-items p {
+      font-size: 28px; } }
+  .classic-items p span {
+    font-size: 48px;
+    color: #AA0601;
+    padding-right: 8px; }
+    @media (max-width: 768px) {
+      .classic-items p span {
+        font-size: 40px; } }
+
+.classic-item1, .classic-item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.classic-item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 768px) {
+    .classic-item2 {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+/*聯名設計鏡框*/
+.design-banner {
+  height: 705px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.design h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #ffff; }
+
+.design-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .design-items li {
+    background-color: #ffff;
+    position: relative; }
+  .design-items img {
+    max-width: 540px;
+    height: 455px;
+    opacity: 0.5; }
+  .design-items p {
+    font-size: 72px;
+    font-weight: bold;
+    color: #AA0601;
+    position: absolute;
+    top: 190px;
+    right: 115px; }
+
+/*顧客推薦*/
+.recommend h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #650300; }
+
+.customer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .customer-list li {
+    max-width: 23%;
+    /*((1140-90三格空格寬)/4)/1140 = 23.0XX*/
+    height: 460px;
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029;
+    /*順序: X軸-> Y軸 -> 圓角度 -> 顏色*/
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    position: relative; }
+    .customer-list li img {
+      height: 256px; }
+    .customer-list li h5 {
+      font-size: 14px;
+      color: #212529;
+      padding-left: 16px; }
+    .customer-list li p {
+      font-size: 16px;
+      color: #212529;
+      padding-left: 16px; }
+    .customer-list li span {
+      font-size: 14px;
+      color: #707070;
+      padding-left: 16px;
+      position: absolute;
+      top: 430px; }
+
+/*聯絡我們*/
+.contactUs {
+  max-width: 730px;
+  margin: 0 auto; }
+  .contactUs h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #000000; }
+  .contactUs p {
+    font-size: 20px;
+    font-weight: bold; }
+
+.contact-info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  /*quiz: RWD時會做變更，是要設在HTML好還是CSS裡?*/ }
+  .contact-info li label {
+    padding-bottom: 4px;
+    line-height: 24px; }
+  .contact-info li input {
+    height: 50px;
+    font-size: 16px; }
+  .contact-info li textarea {
+    height: 136px;
+    font-size: 16px; }
+
+.contact-info p {
+  font-size: 16px;
+  text-align: center; }
+  .contact-info p input, .contact-info p label {
+    float: left;
+    margin-bottom: 40px; }
+  .contact-info p button {
+    width: 48%;
+    height: 54px;
+    font-size: 16px;
+    background-color: #AA0601;
+    color: #ffff;
+    margin-bottom: 80px; }
+
+/*# sourceMappingURL=all.css.map */
