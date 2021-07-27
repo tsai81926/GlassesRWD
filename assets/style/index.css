@@ -76,13 +76,15 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 720px; }
+    max-width: 720px;
+    /*格線 690 + gutter 30*/ }
   .header-container, footer {
     padding: 0 39px; } }
 
 @media (max-width: 375px) {
   .container {
-    max-width: 360px; }
+    max-width: 375px;
+    /*列寬(75*4 = 300) + gutter(15*5=75)*/ }
   .footer {
     padding: 0 15px; } }
 
@@ -281,6 +283,10 @@ a {
     padding-top: 8px; } }
 
 @media (max-width: 768px) {
+  .pt-pad-5 {
+    padding-top: 40px; } }
+
+@media (max-width: 768px) {
   .pt-pad-6 {
     padding-top: 48px; } }
 
@@ -292,19 +298,13 @@ a {
   .pl-pad-2 {
     padding-left: 16px; } }
 
-@media (max-width: 768px) {
-  .pr-pad-30p {
-    padding-right: 30px; } }
-
-/*pad消除內距*/
-@media (max-width: 768px) {
-  .pd-pad-n {
-    padding: 0; } }
-
 /*pad外距設定*/
 @media (max-width: 768px) {
   .mb-pad-1 {
     margin-bottom: 8px; } }
+
+.mb-pad-2 {
+  margin-bottom: 16px; }
 
 @media (max-width: 768px) {
   .mb-pad-5 {
@@ -313,6 +313,10 @@ a {
 @media (max-width: 768px) {
   .mb-pad-7 {
     margin-bottom: 56px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-12 {
+    margin-bottom: 96px; } }
 
 @media (max-width: 768px) {
   .mt-pad-1 {
@@ -339,10 +343,18 @@ a {
     margin-top: 32px; } }
 
 @media (max-width: 768px) {
+  .mb-pad-4 {
+    margin-bottom: 32px; } }
+
+@media (max-width: 768px) {
   .mb-pad-5 {
     margin-bottom: 40px; } }
 
 /*pad行高設定*/
+@media (max-width: 768px) {
+  .lh-pad-3 {
+    line-height: 24px; } }
+
 @media (max-width: 768px) {
   .lh-pad-30p {
     line-height: 30px; } }
@@ -366,6 +378,10 @@ a {
     padding-top: 16px; } }
 
 @media (max-width: 375px) {
+  .pt-cel-4 {
+    padding-top: 32px; } }
+
+@media (max-width: 375px) {
   .pt-cel-164p {
     padding-top: 164px; } }
 
@@ -383,6 +399,10 @@ a {
     margin-top: 8px; } }
 
 @media (max-width: 375px) {
+  .mb-cel-2 {
+    margin-bottom: 16px; } }
+
+@media (max-width: 375px) {
   .mb-cel-20p {
     margin-bottom: 20px; } }
 
@@ -393,6 +413,10 @@ a {
 @media (max-width: 375px) {
   .mb-cel-5 {
     margin-bottom: 40px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-9 {
+    margin-bottom: 72px; } }
 
 /*消除外距設定*/
 @media (max-width: 375px) {
@@ -499,42 +523,60 @@ a {
   .classic {
     height: 654px; } }
 
+@media (max-width: 375px) {
+  .classic {
+    height: 500px; } }
+
 .classic h2 {
   text-align: center;
   font-weight: bold;
   color: #650300; }
-
-.classic-items img {
-  width: 57%; }
   @media (max-width: 768px) {
-    .classic-items img {
-      width: 61%;
-      /*設px沒有縮放*/
-      height: 168px; } }
-
-.classic-items p {
-  width: 41%;
-  font-size: 48px;
-  font-weight: bold;
-  color: #AA0601; }
-  @media (max-width: 768px) {
-    .classic-items p {
-      font-size: 28px; } }
-  .classic-items p span {
-    font-size: 48px;
-    color: #AA0601;
-    padding-right: 8px; }
-    @media (max-width: 768px) {
-      .classic-items p span {
-        font-size: 40px; } }
+    .classic h2 {
+      font-size: 32px; } }
 
 .classic-item1, .classic-item3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 375px) {
+    .classic-item1, .classic-item3 {
+      position: relative; } }
+  .classic-item1 img, .classic-item3 img {
+    width: 57%; }
+    @media (max-width: 768px) {
+      .classic-item1 img, .classic-item3 img {
+        width: 54%;
+        height: 168px; } }
+    @media (max-width: 375px) {
+      .classic-item1 img, .classic-item3 img {
+        width: 100%;
+        height: 134px; } }
+  .classic-item1 p, .classic-item3 p {
+    width: 40%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #AA0601; }
+    @media (max-width: 768px) {
+      .classic-item1 p, .classic-item3 p {
+        font-size: 28px; } }
+    @media (max-width: 375px) {
+      .classic-item1 p, .classic-item3 p {
+        position: absolute;
+        right: 50%; } }
+    .classic-item1 p span, .classic-item3 p span {
+      font-size: 48px;
+      color: #AA0601;
+      padding-right: 8px; }
+      @media (max-width: 768px) {
+        .classic-item1 p span, .classic-item3 p span {
+          font-size: 40px; } }
 
 .classic-item2 {
   display: -webkit-box;
@@ -544,6 +586,9 @@ a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -552,7 +597,42 @@ a {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  @media (max-width: 375px) {
+    .classic-item2 {
+      position: relative; } }
+  .classic-item2 img {
+    width: 57%; }
+    @media (max-width: 768px) {
+      .classic-item2 img {
+        width: 54%;
+        height: 168px; } }
+    @media (max-width: 375px) {
+      .classic-item2 img {
+        width: 100%;
+        height: 134px; } }
+  .classic-item2 p {
+    width: 40%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #AA0601; }
+    @media (max-width: 768px) {
+      .classic-item2 p {
+        font-size: 28px; } }
+    @media (max-width: 375px) {
+      .classic-item2 p {
+        position: absolute;
+        right: 50%; } }
+    .classic-item2 p span {
+      font-size: 48px;
+      color: #AA0601;
+      padding-right: 8px; }
+      @media (max-width: 768px) {
+        .classic-item2 p span {
+          font-size: 40px; } }
 
 /*聯名設計鏡框*/
 .design-banner {
@@ -560,11 +640,23 @@ a {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
   background-repeat: no-repeat;
   background-position: center center; }
+  @media (max-width: 768px) {
+    .design-banner {
+      height: 452px; } }
+  @media (max-width: 375px) {
+    .design-banner {
+      height: 719px; } }
 
 .design h2 {
   text-align: center;
   font-weight: bold;
   color: #ffff; }
+  @media (max-width: 768px) {
+    .design h2 {
+      font-size: 32px; } }
+  @media (max-width: 375px) {
+    .design h2 {
+      font-size: 20px; } }
 
 .design-items {
   display: -webkit-box;
@@ -573,13 +665,40 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 375px) {
+    .design-items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .design-items li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 540px;
     background-color: #ffff;
     position: relative; }
+    @media (max-width: 768px) {
+      .design-items li {
+        max-width: 330px;
+        height: 278px; } }
+    @media (max-width: 375px) {
+      .design-items li {
+        max-width: 345px;
+        height: 291px; } }
   .design-items img {
-    max-width: 540px;
+    width: 100%;
     height: 455px;
     opacity: 0.5; }
+    @media (max-width: 768px) {
+      .design-items img {
+        width: 100%;
+        /*%數是依據父層 li寬度設定，li寬330，img跟著填滿li所以100%*/
+        height: 100%; } }
+    @media (max-width: 375px) {
+      .design-items img {
+        width: 100%;
+        height: 100%; } }
   .design-items p {
     font-size: 72px;
     font-weight: bold;
@@ -587,12 +706,23 @@ a {
     position: absolute;
     top: 190px;
     right: 115px; }
+    @media (max-width: 768px) {
+      .design-items p {
+        font-size: 32px;
+        top: 125px;
+        right: 77px; } }
 
 /*顧客推薦*/
 .recommend h2 {
   text-align: center;
   font-weight: bold;
   color: #650300; }
+  @media (max-width: 768px) {
+    .recommend h2 {
+      font-size: 32px; } }
+  @media (max-width: 375px) {
+    .recommend h2 {
+      font-size: 20px; } }
 
 .customer-list {
   display: -webkit-box;
@@ -601,8 +731,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 768px) {
+    .customer-list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   .customer-list li {
-    max-width: 23%;
+    max-width: 262px;
     /*((1140-90三格空格寬)/4)/1140 = 23.0XX*/
     height: 460px;
     -webkit-box-shadow: 0px 2px 6px #00000029;
@@ -611,7 +745,14 @@ a {
     border: 1px solid #DEE2E6;
     border-radius: 4px;
     position: relative; }
+    @media (max-width: 768px) {
+      .customer-list li {
+        max-width: 330px; } }
+    @media (max-width: 375px) {
+      .customer-list li {
+        max-width: 345px; } }
     .customer-list li img {
+      width: 100%;
       height: 256px; }
     .customer-list li h5 {
       font-size: 14px;
@@ -632,13 +773,28 @@ a {
 .contactUs {
   max-width: 730px;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .contactUs {
+      max-width: 450px; } }
+  @media (max-width: 375px) {
+    .contactUs {
+      max-width: 345px; } }
   .contactUs h2 {
     text-align: center;
     font-weight: bold;
     color: #000000; }
+    @media (max-width: 768px) {
+      .contactUs h2 {
+        font-size: 32px; } }
+    @media (max-width: 375px) {
+      .contactUs h2 {
+        font-size: 20px; } }
   .contactUs p {
     font-size: 20px;
     font-weight: bold; }
+    @media (max-width: 768px) {
+      .contactUs p {
+        font-size: 16px; } }
 
 .contact-info li {
   display: -webkit-box;
@@ -650,28 +806,54 @@ a {
           flex-direction: column;
   margin-bottom: 16px;
   /*quiz: RWD時會做變更，是要設在HTML好還是CSS裡?*/ }
+  @media (max-width: 768px) {
+    .contact-info li {
+      margin-bottom: 8px; } }
   .contact-info li label {
     padding-bottom: 4px;
     line-height: 24px; }
+    @media (max-width: 768px) {
+      .contact-info li label {
+        font-size: 14px; } }
   .contact-info li input {
     height: 50px;
     font-size: 16px; }
+    @media (max-width: 768px) {
+      .contact-info li input {
+        height: 36px; } }
   .contact-info li textarea {
     height: 136px;
     font-size: 16px; }
+    @media (max-width: 768px) {
+      .contact-info li textarea {
+        height: 100px; } }
 
 .contact-info p {
-  font-size: 16px;
-  text-align: center; }
-  .contact-info p input, .contact-info p label {
-    float: left;
-    margin-bottom: 40px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px; }
+  @media (max-width: 768px) {
+    .contact-info p label {
+      font-size: 14px;
+      text-align: left;
+      line-height: 21px; } }
   .contact-info p button {
     width: 48%;
     height: 54px;
     font-size: 16px;
     background-color: #AA0601;
-    color: #ffff;
-    margin-bottom: 80px; }
+    color: #ffff; }
+    @media (max-width: 768px) {
+      .contact-info p button {
+        width: 45%;
+        height: 40px; } }
+    @media (max-width: 375px) {
+      .contact-info p button {
+        width: 48%;
+        height: 36px; } }
 
 /*# sourceMappingURL=index.css.map */

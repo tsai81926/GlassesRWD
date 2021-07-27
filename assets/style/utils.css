@@ -176,6 +176,10 @@
     padding-top: 8px; } }
 
 @media (max-width: 768px) {
+  .pt-pad-5 {
+    padding-top: 40px; } }
+
+@media (max-width: 768px) {
   .pt-pad-6 {
     padding-top: 48px; } }
 
@@ -187,19 +191,13 @@
   .pl-pad-2 {
     padding-left: 16px; } }
 
-@media (max-width: 768px) {
-  .pr-pad-30p {
-    padding-right: 30px; } }
-
-/*pad消除內距*/
-@media (max-width: 768px) {
-  .pd-pad-n {
-    padding: 0; } }
-
 /*pad外距設定*/
 @media (max-width: 768px) {
   .mb-pad-1 {
     margin-bottom: 8px; } }
+
+.mb-pad-2 {
+  margin-bottom: 16px; }
 
 @media (max-width: 768px) {
   .mb-pad-5 {
@@ -208,6 +206,10 @@
 @media (max-width: 768px) {
   .mb-pad-7 {
     margin-bottom: 56px; } }
+
+@media (max-width: 768px) {
+  .mb-pad-12 {
+    margin-bottom: 96px; } }
 
 @media (max-width: 768px) {
   .mt-pad-1 {
@@ -234,10 +236,18 @@
     margin-top: 32px; } }
 
 @media (max-width: 768px) {
+  .mb-pad-4 {
+    margin-bottom: 32px; } }
+
+@media (max-width: 768px) {
   .mb-pad-5 {
     margin-bottom: 40px; } }
 
 /*pad行高設定*/
+@media (max-width: 768px) {
+  .lh-pad-3 {
+    line-height: 24px; } }
+
 @media (max-width: 768px) {
   .lh-pad-30p {
     line-height: 30px; } }
@@ -261,6 +271,10 @@
     padding-top: 16px; } }
 
 @media (max-width: 375px) {
+  .pt-cel-4 {
+    padding-top: 32px; } }
+
+@media (max-width: 375px) {
   .pt-cel-164p {
     padding-top: 164px; } }
 
@@ -278,6 +292,10 @@
     margin-top: 8px; } }
 
 @media (max-width: 375px) {
+  .mb-cel-2 {
+    margin-bottom: 16px; } }
+
+@media (max-width: 375px) {
   .mb-cel-20p {
     margin-bottom: 20px; } }
 
@@ -288,6 +306,10 @@
 @media (max-width: 375px) {
   .mb-cel-5 {
     margin-bottom: 40px; } }
+
+@media (max-width: 375px) {
+  .mb-cel-9 {
+    margin-bottom: 72px; } }
 
 /*消除外距設定*/
 @media (max-width: 375px) {
