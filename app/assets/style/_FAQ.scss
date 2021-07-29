@@ -1,0 +1,9 @@
+@import '_variables';
+@import '_mixin';
+@import '_reset';
+@import '_base';
+@import '_utils';
+
+.container{
+    max-width: 1015px;
+}
