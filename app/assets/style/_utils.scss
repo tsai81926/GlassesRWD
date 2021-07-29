@@ -1,0 +1,294 @@
+@import '_variables';
+@import '_mixin';
+
+/*常用工具列*/
+
+/*行高*/
+.lh-54p {line-height: 54px;}
+.lh-12 {line-height: 96px;}
+
+/*內距*/
+.pt-2 {padding-top: 16px;}
+.pt-4 {padding-top: 32px;}
+.pt-30p {padding-top: 30px;}
+.pt-38p {padding-top: 38px;}
+.pt-44p {padding-top: 44px;}
+.pt-60p {padding-top: 60px;}
+.pt-348p {padding-top: 348px;}
+
+.pb-1 {padding-bottom: 8px;}
+.pb-2 {padding-bottom: 16px;}
+.pb-3 {padding-bottom: 24px;}
+
+.pl-1 {padding-left: 8px;}
+.pl-2 {padding-left: 16px;}
+.pl-3 {padding-left: 24px;}
+.pl-30p {padding-left: 30px;}
+.pl-8 {padding-left: 64px;}
+.pl-11 {padding-left: 88px;}
+
+.pr-1 {padding-right: 8px;}
+.pr-20p {padding-right: 20px;}
+.pr-22p {padding-right: 22px;}
+.pr-3 {padding-right: 24px;}
+.pr-30p {padding-right: 30px;}
+.pr-4 {padding-right: 32px;}
+.pr-6 {padding-right: 48px;}
+.pr-7 {padding-right: 56px;}
+.pr-8 {padding-right: 64px;}
+.pr-11 {padding-right: 88px;}
+
+/*外距*/
+
+.mt-1 {margin-top: 8px;}
+.mt-2 {margin-top: 16px;}
+.mt-4 {margin-top: 32px;}
+
+.mb-1 {margin-bottom: 8px;}
+.mb-2 {margin-bottom: 16px;}
+.mb-20p {margin-bottom: 20px;}
+.mb-3 {margin-bottom: 24px;}
+.mb-4 {margin-bottom: 32px;}
+.mb-5 {margin-bottom: 40px;}
+.mb-6 {margin-bottom: 48px;}
+.mb-60p {margin-bottom: 60px;}
+.mb-10 {margin-bottom: 80px;}
+.mb-140p {margin-bottom: 140px;}
+
+.ml-11 {margin-right: 88px;}
+
+.mr-3 {margin-right: 24px;}
+.mr-5 {margin-right: 40px;}
+.mr-7 {margin-right: 56px;}
+.mr-11 {margin-right: 88px;}
+
+
+/*行高*/
+.lh-3 {line-height: 24px;}
+.lh-30p {line-height: 30px;}
+.lh-6 {line-height: 48px;}
+.lh-9 {line-height: 72px;}
+.lh-12 {line-height: 96px;}
+
+
+/*Icon設定區*/
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: bold;
+    color: $dark-danger;
+    font-size: 83.33px;
+}
+
+
+/* Pad常用工具 */
+
+/*pad內距設定*/
+.pt-pad-1 {
+    @include pad {
+        padding-top: 8px;
+    }
+}
+.pt-pad-5 {
+    @include pad {
+        padding-top: 40px;
+    }
+}
+.pt-pad-6 {
+    @include pad {
+        padding-top: 48px;
+    }
+}
+
+.pl-pad-1 {
+    @include pad {
+        padding-left: 8px;
+    }
+}
+.pl-pad-2 {
+    @include pad {
+        padding-left: 16px;
+    }
+}
+
+/*pad外距設定*/
+.mb-pad-1 {
+    @include pad {
+        margin-bottom: 8px;
+    }
+}
+.mb-pad-2 {
+    margin-bottom: 16px;
+}
+.mb-pad-5 {
+    @include pad {
+        margin-bottom: 40px;
+    }
+}
+.mb-pad-7 {
+    @include pad {
+        margin-bottom: 56px;
+    }
+}
+.mb-pad-12 {
+    @include pad {
+        margin-bottom: 96px;
+    }
+}
+.mt-pad-1 {
+    @include pad {
+        margin-top: 8px;
+    }
+}
+.mt-pad-12p {
+    @include pad {
+        margin-top: 12px;
+    }
+}
+.mt-pad-2 {
+    @include pad {
+        margin-top: 16px;
+    }
+}
+.mt-pad-18p {
+    @include pad{
+        margin-top: 18px;
+    }
+}
+.mt-pad-3 {
+    @include pad {
+        margin-top: 24px;
+    }
+}
+.mt-pad-4 {
+    @include pad {
+        margin-top: 32px;
+    }
+}
+.mb-pad-4 {
+    @include pad {
+        margin-bottom: 32px;
+    }
+}
+.mb-pad-5 {
+    @include pad {
+        margin-bottom: 40px;
+    }
+}
+
+/*pad行高設定*/
+.lh-pad-3 {
+    @include pad {
+        line-height: 24px;
+    }
+}
+.lh-pad-30p {
+    @include pad {
+        line-height: 30px;
+    }
+}
+.lh-pad-9 {
+    @include pad {
+        line-height: 72px;
+    }
+}
+
+
+/*mobile常用工具*/
+/*mobile內距設定*/
+.pt-cel-1 {
+    @include mobile {
+        padding-top: 8px;
+    }
+}
+.pt-cel-10p {
+    @include mobile {
+        padding-top: 10px;
+    }
+}
+.pt-cel-2 {
+    @include mobile {
+        padding-top: 16px;
+    }
+}
+.pt-cel-4 {
+    @include mobile {
+        padding-top: 32px;
+    }
+}
+.pt-cel-164p {
+    @include mobile {
+        padding-top: 164px;
+    }
+}
+.ptb-cel-1 {
+    @include mobile {
+        padding: 8px 0px;
+    }
+}
+
+.pl-cel-4p {
+    @include mobile {
+        padding-left: 4px;
+    }
+}
+
+
+/*mobile外距設定*/
+.mt-cel-1 {
+    @include mobile {
+        margin-top: 8px;
+    }
+}
+.mb-cel-2 {
+    @include mobile {
+        margin-bottom: 16px;
+    }
+}
+.mb-cel-20p {
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+.mb-cel-4 {
+    @include mobile {
+        margin-bottom: 32px;
+    }
+}
+.mb-cel-5 {
+    @include mobile {
+        margin-bottom: 40px;
+    }
+}
+.mb-cel-9 {
+    @include mobile {
+        margin-bottom: 72px;
+    }
+}
+/*消除外距設定*/
+.m-cel-n {
+    @include mobile {
+        margin: 0;
+    }
+}
+.mt-cel-2 {
+    @include mobile {
+        margin-top: 16px;
+    }
+}
+.mb-cel-2 {
+    @include mobile {
+        margin-bottom: 16px;
+    }
+}
+.mb-cel-3 {
+    @include mobile {
+        margin-bottom: 24px;
+    }
+}
+
+/*mobile行高設定*/
+.lh-cel-30p {
+    @include mobile {
+        line-height: 30px
+    }
+}

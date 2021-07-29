@@ -1,0 +1,48 @@
+@import '_variables';
+
+/*斷點設計*/
+.container {
+    max-width: 1140px; /*width 1110px + gutter 30px(網格白色padding左右各推 15px)*/
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-container {
+    max-width: 1724px;
+    padding: 0 88px;
+}
+@media (max-width:768px){
+    .container{
+        max-width: 720px;  /*格線 690 + gutter 30*/
+    }
+    .header-container, footer{
+        padding: 0 39px;
+    }
+}
+@media (max-width:375px){
+    .container{
+        max-width: 375px;   /*列寬(75*4 = 300) + gutter(15*5=75)*/
+    }
+    .footer {
+        padding: 0 15px;
+    }
+}
+
+
+/*字型大小*/
+h1{
+    font-size: $font-xxl;
+    font-weight: bold;
+}
+h2{
+    font-size: $font-xl;
+}
+h3{
+    font-size: $font-l;
+}
+h4 {
+    font-size: $font-m;
+}
+
+a {
+    text-decoration: none;  /*消除底線*/
+}

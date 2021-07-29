@@ -1,0 +1,410 @@
+@import '_variables';
+@import '_mixin';
+@import '_reset';
+@import '_base';
+@import '_utils';
+
+
+/*首頁大背景*/
+.head-banner {
+    height: 840px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include mobile {
+        height: 394px;
+        // background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+    }
+    .head-banner-text {
+        text-align: right;
+        color: $dark-danger;
+        font-weight: bold;
+        h3 {
+            @include mobile {
+                font-size: $fnot-xs;
+            }    
+        }
+        h1 {
+            @include mobile {
+                font-size: $font-xm;
+            }
+        }
+    }
+}
+
+/*用專業的心，做專業的事*/
+.professional {
+    @include pad {
+        height: 668px;
+    }
+    @include mobile {
+        height: 1099px; 
+    }
+    h2 {
+        @include font-center-bold;
+        color: $dark-danger;
+        @include pad {
+            font-size: $font-xm;
+        }
+        @include mobile {
+            font-size: $font-m;
+        }
+    }
+}
+.professional-items {
+    display: flex;
+    justify-content: space-between;
+    @include pad {
+        flex-wrap: wrap;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+    }
+    li {
+        max-width: 23%;
+        text-align: center;
+        @include pad {
+            max-width: 50%;
+            height: 33%;      /*223px(li的個別pad總高) / 668px(professional的pad總高) = 33*/
+        }
+        @include mobile {
+            max-width: 100%;
+        }
+        h4 {
+            font-weight: bold;
+            color: $dark-danger;
+        }
+        p {
+           text-align: left;
+           line-height: 24px;
+           @include pad {
+               max-width: 70%;
+               margin: 0 auto;
+           }
+        }
+    }
+}
+
+/*經典系列鏡框*/
+.classic {
+    @include pad {        
+        height: 654px;
+    }
+    @include mobile {
+        height: 500px;
+    }
+    h2{
+        @include font-center-bold;
+        color: $dark-danger;
+        @include pad {
+            font-size: $font-xm;
+        }
+    }
+}
+.classic-item1, .classic-item3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+        position: relative;
+    }
+    img {
+        width: 57%;
+        @include pad {
+            width: 54%; 
+            height: 168px;
+        }
+        @include mobile {
+            width: 100%;
+            height: 134px;
+        }
+    }
+    p {
+        width: 40%;
+        font-size: $font-l;
+        font-weight: bold;
+        color: $danger;
+        @include pad {
+            font-size: $font-mm;
+        }
+        @include mobile {
+            position:absolute;
+            right: 50%;
+        }
+        span {
+            font-size: 48px;
+            color: $danger;
+            padding-right: 8px;
+            @include pad {
+                font-size: 40px;
+            }
+        }
+    }
+}
+.classic-item2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    @include pad {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include mobile {
+        position: relative;
+    }
+    img {
+        width: 57%;
+        @include pad {
+            width: 54%; 
+            height: 168px;
+        }
+        @include mobile {
+            width: 100%;
+            height: 134px;
+        }
+    }
+    p {
+        width: 40%;
+        font-size: $font-l;
+        font-weight: bold;
+        color: $danger;
+        @include pad {
+            font-size: $font-mm;
+        }
+        @include mobile {
+            position: absolute;
+            right: 50%;
+        }
+        span {
+            font-size: 48px;
+            color: $danger;
+            padding-right: 8px;
+            @include pad {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+/*聯名設計鏡框*/
+.design-banner {
+    height: 705px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include pad {
+        height: 452px;
+    }
+    @include mobile {
+        height: 719px;
+    }
+}
+.design {
+    h2 {
+        @include font-center-bold;
+        color: $white;
+        @include pad {
+            font-size: $font-xm;
+        }
+        @include mobile {
+            font-size: $font-s;
+        }
+    }
+}
+.design-items {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        flex-direction: column;
+    }
+    li {
+        display: flex;
+        max-width: 540px;
+        background-color:$white;
+        position: relative;
+        @include pad {
+            max-width: 330px;
+            height: 278px;
+        }
+        @include mobile {
+            max-width: 345px;
+            height: 291px;
+        } 
+    }
+    img {
+        width: 100%;
+        height: 455px;
+        opacity: 0.5;
+        @include pad {
+            width: 100%;    /*%數是依據父層 li寬度設定，li寬330，img跟著填滿li所以100%*/
+            height: 100%;  
+        }
+        @include mobile {
+            width: 100%;
+            height: 100%;
+        } 
+              
+    }
+    p {
+        font-size: $font-big;
+        font-weight: bold;
+        color: $danger;
+        position: absolute;
+        top:190px;
+        right:115px;
+        @include pad {
+            font-size: $font-xm;
+            top: 125px;
+            right: 77px;
+        }
+    }
+}
+
+/*顧客推薦*/
+.recommend {
+    h2 {
+        @include font-center-bold;
+        color: $dark-danger;
+        @include pad {
+            font-size: $font-xm;
+        }
+        @include mobile {
+            font-size: $font-s;
+        }
+    }
+}
+.customer-list {
+    display: flex;
+    justify-content: space-between;
+    @include pad {
+        flex-wrap: wrap;
+    }
+    li {
+        max-width: 262px;  /*((1140-90三格空格寬)/4)/1140 = 23.0XX*/
+        height: 460px;
+        margin: 0 auto;
+        box-shadow: 0px 2px 6px $light-gray;  /*順序: X軸-> Y軸 -> 圓角度 -> 顏色*/
+        border:1px solid $micro-gray;
+        border-radius: 4px;
+        position: relative;
+        @include pad {
+            max-width: 330px;
+            
+        }
+        @include mobile {
+            max-width: 345px;
+        }
+        img {
+            width: 100%;
+            height: 256px;
+        }
+        h5 {
+            font-size: $font-xxs;
+            color: $dark-gray;
+            padding-left: 16px;
+        }
+        p {
+            font-size: $fnot-xs;
+            color: $dark-gray;
+            padding-left: 16px;
+        }
+        span {
+            font-size: $font-xxs;
+            color: $gray;
+            padding-left: 16px;
+            position: absolute;
+            top: 430px;
+        }
+    }
+}
+
+/*聯絡我們*/
+.contactUs {
+    max-width: 730px;
+    margin: 0 auto;
+    @include pad {
+        max-width: 450px;
+    }
+    @include mobile {
+        max-width: 345px;
+    }
+    h2 {
+        @include font-center-bold;
+        color: $black;
+        @include pad {
+            font-size: $font-xm;
+        }
+        @include mobile {
+            font-size: $font-s;
+        }
+    }
+    p {
+        font-size: $font-s;
+        font-weight: bold;
+        @include pad {
+            font-size: $fnot-xs;
+        }
+    }
+}
+.contact-info {
+    li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;    /*quiz: RWD時會做變更，是要設在HTML好還是CSS裡?*/
+        @include pad {
+            margin-bottom: 8px;
+        }
+        label {
+            padding-bottom: 4px;
+            line-height: 24px;
+            @include pad {
+                font-size: $font-xxs;
+            }
+        }
+        input {
+            height: 50px;
+            font-size: $fnot-xs;
+            @include pad {
+                height: 36px;
+            }
+        }
+        textarea {
+            height: 136px;
+            font-size: $fnot-xs;
+            @include pad {
+                height: 100px;
+            }
+        }
+    }
+    p { 
+        display: flex;
+        justify-content: center;
+        font-size: $fnot-xs;       
+        label {
+            @include pad {
+                font-size: $font-xxs;
+                text-align: left;
+                line-height: 21px;
+                // text-indent: 16px;
+            }
+        }
+        button {
+            width: 48%;
+            height: 54px;
+            font-size: $fnot-xs;
+            background-color: $danger;
+            color: $white;
+            @include pad {
+                width: 45%;
+                height: 40px;
+            }
+            @include mobile {
+                width: 48%;
+                height: 36px;
+            }
+        }
+    }
+    
+}

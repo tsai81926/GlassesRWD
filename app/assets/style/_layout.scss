@@ -1,0 +1,176 @@
+@import '_variables';
+@import '_mixin';
+@import '_reset';
+@import '_base';
+@import '_utils';
+
+.header {
+    background-color: $danger;
+    height: 108px;
+    @include mobile {
+        height: 140px;
+    }
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+        }
+    }
+    .shop-logo{
+        img {       
+        max-width: 80px;
+        height: 48.57px;
+        } 
+        @include mobile {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .head-menu{
+        width: 492px;
+        display: flex;
+        justify-content: space-between;
+        @include pad {
+            width: 420px;
+        }
+        @include mobile {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        li {
+            @include mobile {                
+                width: 50%;
+                height: 36px; 
+                border: 1px solid $white;
+            }
+        }  
+        a {
+            color:$white;
+            font-size: $font-s;
+            &:hover{
+                font-size: $font-m;
+                opacity: 0.5;   /*透明度*/
+            }
+        }
+         
+    }    
+}
+
+  
+.footer {
+    color:$white;
+    font-size: $fnot-xs;
+    height: 333px;
+    background-color: $danger;
+    @include pad {
+        height: 241px;
+    }
+    @include mobile {
+        height: 212px;
+    }
+    .footer-upper {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            float: right;
+        }
+        .footer-menu {
+            width: 464px;
+            display: flex;
+            justify-content: space-between;
+            font-size: $fnot-xs;
+            a {
+                color: $white;
+                &:hover {
+                    font-size: $font-s;
+                    opacity: 0.5;
+                }
+            }
+            @include pad {
+                width: 432px;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+        .social-imgs{
+            width: 208px;
+            display: flex;
+            justify-content: space-between;
+            @include pad {
+                width: 120px;
+            }
+            img {
+                &:hover {
+                    background-color:red;
+                    opacity: 0.6;
+                    border-radius: 30%;
+                }
+                @include pad {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+    .footer-central {
+        border-bottom: 1px solid $white;
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            img {
+                @include pad {
+                    width: 24px;
+                    height: 24px;
+                }
+                @include mobile {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            span {
+                color: $white;
+                font-size: $font-l;
+                &:hover {
+                    color: chartreuse;
+                }
+                @include pad {
+                    font-size: $font-s;
+                    margin-top: 16px;
+                }
+                @include mobile {
+                    font-size: $fnot-xs;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            
+            flex-direction: column;
+            justify-content: flex-start;
+            font-size: $font-xxs;
+        }
+        .private {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            font-size: $font-xxs;
+            @include pad {
+                width: 21%;
+            }
+            @include mobile {
+                width: 20%;
+                flex-direction: column; 
+                white-space: nowrap;                               
+            }
+        }
+    }
+}
