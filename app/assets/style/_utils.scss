@@ -26,6 +26,7 @@
 .pl-30p {padding-left: 30px;}
 .pl-8 {padding-left: 64px;}
 .pl-11 {padding-left: 88px;}
+.pl-95p {padding-left: 95px;}
 
 .pr-1 {padding-right: 8px;}
 .pr-20p {padding-right: 20px;}
@@ -43,17 +44,21 @@
 .mt-1 {margin-top: 8px;}
 .mt-2 {margin-top: 16px;}
 .mt-4 {margin-top: 32px;}
+.mt-12 {margin-top: 96px;}
 
 .mb-1 {margin-bottom: 8px;}
 .mb-2 {margin-bottom: 16px;}
 .mb-20p {margin-bottom: 20px;}
 .mb-3 {margin-bottom: 24px;}
 .mb-4 {margin-bottom: 32px;}
+.mb-36p {margin-bottom: 36px;}
 .mb-5 {margin-bottom: 40px;}
 .mb-6 {margin-bottom: 48px;}
 .mb-60p {margin-bottom: 60px;}
 .mb-10 {margin-bottom: 80px;}
+.mb-16 {margin-bottom: 128px;}
 .mb-140p {margin-bottom: 140px;}
+
 
 .ml-11 {margin-right: 88px;}
 
@@ -109,6 +114,11 @@
         padding-left: 16px;
     }
 }
+.pl-pad-60p {
+    @include pad {
+        padding-left: 60px;
+    }
+}
 
 /*pad外距設定*/
 .mb-pad-1 {
@@ -119,6 +129,11 @@
 .mb-pad-2 {
     margin-bottom: 16px;
 }
+.mb-pad-3 {
+    @include pad {
+        margin-bottom: 24px;
+    }
+}
 .mb-pad-5 {
     @include pad {
         margin-bottom: 40px;
@@ -127,6 +142,11 @@
 .mb-pad-7 {
     @include pad {
         margin-bottom: 56px;
+    }
+}
+.mb-pad-9 {
+    @include pad {
+        margin-bottom: 72px;
     }
 }
 .mb-pad-12 {
@@ -162,6 +182,11 @@
 .mt-pad-4 {
     @include pad {
         margin-top: 32px;
+    }
+}
+.mt-pad-60p {
+    @include pad {
+        margin-top: 60px;
     }
 }
 .mb-pad-4 {
@@ -231,12 +256,32 @@
         padding-left: 4px;
     }
 }
-
+.pl-cel-1 {
+    @include mobile {
+        padding-left: 8px;
+    }
+}
+/*mobile消除內距設定*/
+.pl-cel-n {
+    @include mobile {
+        padding-left: 0;
+    }
+}
 
 /*mobile外距設定*/
 .mt-cel-1 {
     @include mobile {
         margin-top: 8px;
+    }
+}
+.mt-cel-28p {
+    @include mobile {
+        margin-top: 28px;
+    }
+}
+.mb-cel-1 {
+    @include mobile {
+        margin-bottom: 8px;
     }
 }
 .mb-cel-2 {
@@ -249,9 +294,19 @@
         margin-bottom: 20px;
     }
 }
+.mb-cel-21p {
+    @include mobile {
+        margin-bottom: 21px;
+    }
+}
 .mb-cel-4 {
     @include mobile {
         margin-bottom: 32px;
+    }
+}
+.mb-cel-36p {
+    @include mobile {
+        margin-bottom: 36px;
     }
 }
 .mb-cel-5 {
