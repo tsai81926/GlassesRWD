@@ -1,0 +1,12 @@
+@import '_variables';
+@import '_mixin';
+
+.product-item {
+    width: calc((100% - 90px)/4);   /*gutter=30px*3*/
+    @include pad {
+        width: calc((100% - 30px)/2);   
+    }
+    @include mobile {
+        width: 100%
+    }
+}
