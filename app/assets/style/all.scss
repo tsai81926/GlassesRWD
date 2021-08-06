@@ -1,12 +1,18 @@
-@import '_reset';
 @import '_variables';
+@import '_reset';
 @import '_base';
+@import '_mixin';
 @import '_utils';
 @import '_components';
-@import '_layout';
-@import '_index';
-@import '_FAQ';
-@import '_products-1';
+
+/*layout*/
+@import 'layout/_layout';
+
+/*Pages*/
+@import 'pages/_index';
+@import 'pages/_FAQ';
+@import 'pages/_products-optical';
+@import 'pages/products-sunglasses';
 
 
 

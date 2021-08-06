@@ -1,0 +1,142 @@
+
+.series-nav {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    li {
+        width: 32%;
+        a {
+            @include font-center-bold;
+            font-size: $font-xm;
+            color: $black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 8px solid $white;
+            line-height: 1.5;  /*推出上下距離*/
+            &:hover {
+                background-color: $light-gray;
+                border-bottom: 8px solid $black;
+            }
+            @include pad {
+                font-size: $font-m;
+            }
+            @include mobile {
+                font-size: $font-xxs;
+            }
+        }
+    }
+}
+
+.nav-sunglasses {
+    border-right: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+}
+.series-icon {
+    font-size: $font-xl;
+    color: $black;
+    @include pad {
+        font-size: $font-xm;
+    }
+    @include mobile {
+        font-size: $fnot-xs;
+    }
+}
+
+.series-optical-banner {
+    max-width: 1920px;
+    display: flex;
+    .series-optical-banner-1 {
+        width: 50%;
+        height: 304px;
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-1.png?raw=true);
+        background-position: center center;
+        background-size: cover;
+        @include pad {
+            background-image: url(https://valuvision.com/wp-content/uploads/2017/05/cost-of-eyeglasses-without-insurance.jpg);
+        }
+    }
+    .series-optical-banner-2 {
+        width: 50%;
+        height: 304px;
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-2.png?raw=true);
+        background-position: center center;
+        background-size: cover;
+        @include pad {
+            background-image: url(https://www.mijnkerk.nl/wp-content/uploads/2020/11/flemming-fuchs-zisRjTikZWU-unsplash-390x290.jpg);
+        }
+    }
+}
+
+.series-optical-main {
+    h2 {
+        text-align: center;
+        font-size: 42px;
+        @include pad {
+            font-size: $font-xm;
+        }
+        @include mobile {
+            font-size: $font-s;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: $font-xm;
+        margin-bottom: 40px;
+        @include pad {
+            font-size: $font-m;
+            margin-bottom: 32px;
+        }
+        @include mobile {
+            font-size: $fnot-xs;
+            margin-bottom: 20px;
+        }
+    }
+}
+.products-optical {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        width: 100%;
+        height: 164px;
+    }
+    .product-optical-detail {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;    /*加上wrap讓縮放時編號和價錢不會重疊*/
+        font-size: $font-m;
+        @include mobile {
+            font-size: $fnot-xs;
+        }
+        .optical-price {
+            color: $danger;
+        }
+    }
+}
+.product-optical-color {
+    display: flex;
+    .product-optical-color1 {
+        width: 24px;
+        height: 24px;
+        background-color: #5F3E2D;
+        border-radius: 4px;
+        margin-right: 8px;
+        @include mobile {
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+    .product-optical-color2 {
+        width: 24px;
+        height: 24px;
+        background-color: #B75929;
+        border-radius: 4px;
+        @include mobile {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

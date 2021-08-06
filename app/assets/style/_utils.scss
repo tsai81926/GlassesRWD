@@ -1,5 +1,3 @@
-@import '_variables';
-@import '_mixin';
 
 /*常用工具列*/
 
@@ -56,8 +54,10 @@
 .mb-6 {margin-bottom: 48px;}
 .mb-60p {margin-bottom: 60px;}
 .mb-10 {margin-bottom: 80px;}
+.mb-13 {margin-bottom: 104px;}
 .mb-16 {margin-bottom: 128px;}
 .mb-140p {margin-bottom: 140px;}
+.mb-20 {margin-bottom: 160px;}
 
 
 .ml-11 {margin-right: 88px;}
@@ -312,6 +312,11 @@
 .mb-cel-5 {
     @include mobile {
         margin-bottom: 40px;
+    }
+}
+.mb-cel-7 {
+    @include mobile {
+        margin-bottom: 56px;
     }
 }
 .mb-cel-9 {

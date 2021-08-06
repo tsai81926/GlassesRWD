@@ -1,11 +1,7 @@
-@import '_variables';
-@import '_mixin';
-@import '_reset';
-@import '_base';
-@import '_utils';
 
-.container{
+.FAQ {
     max-width: 1015px;
+    margin: 0 auto;
     h2 {
         border-left:8px solid $middle-danger;
         font-weight: bold;
