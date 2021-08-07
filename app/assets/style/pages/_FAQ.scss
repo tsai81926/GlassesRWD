@@ -9,8 +9,6 @@
             font-size: $font-mm;
         }
     }
-}
-.glasses-quiz {
     h3 {
         font-size: $font-xm;
         font-weight: bold;
@@ -18,19 +16,19 @@
             font-size: $font-s;
         }
     }
-    li {
-        h4 {
-            font-size: $font-s;
-            font-weight: bold;
-            @include mobile {
-                font-size: $fnot-xs;
-            }
+}
+.glasses-quiz {
+    h4 {
+        font-size: $font-s;
+        font-weight: bold;
+        @include mobile {
+            font-size: $fnot-xs;
         }
-        p {
-            @include mobile {
-                font-size: $font-xxs;
-                line-height: 21px;     /*手機板p的空行用行高21px (mb-cel-21p)設定*/
-            }
+    }
+    p {
+        @include mobile {
+            font-size: $font-xxs;
+            line-height: 21px;     /*手機板p的空行用行高21px (mb-cel-21p)設定*/
         }
     }
 }
