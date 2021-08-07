@@ -1318,7 +1318,7 @@ a {
     .classic h2 {
       font-size: 32px; } }
 
-.classic-item1, .classic-item3 {
+.classic-item-optical, .classic-item-functional {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1329,39 +1329,41 @@ a {
       -ms-flex-align: center;
           align-items: center; }
   @media (max-width: 375px) {
-    .classic-item1, .classic-item3 {
+    .classic-item-optical, .classic-item-functional {
       position: relative; } }
-  .classic-item1 img, .classic-item3 img {
-    width: 57%; }
+  .classic-item-optical img, .classic-item-functional img {
+    width: 57%;
+    -o-object-fit: cover;
+       object-fit: cover; }
     @media (max-width: 768px) {
-      .classic-item1 img, .classic-item3 img {
+      .classic-item-optical img, .classic-item-functional img {
         width: 54%;
         height: 168px; } }
     @media (max-width: 375px) {
-      .classic-item1 img, .classic-item3 img {
+      .classic-item-optical img, .classic-item-functional img {
         width: 100%;
         height: 134px; } }
-  .classic-item1 p, .classic-item3 p {
+  .classic-item-optical p, .classic-item-functional p {
     width: 40%;
     font-size: 36px;
     font-weight: bold;
     color: #AA0601; }
     @media (max-width: 768px) {
-      .classic-item1 p, .classic-item3 p {
+      .classic-item-optical p, .classic-item-functional p {
         font-size: 28px; } }
     @media (max-width: 375px) {
-      .classic-item1 p, .classic-item3 p {
+      .classic-item-optical p, .classic-item-functional p {
         position: absolute;
         right: 50%; } }
-    .classic-item1 p span, .classic-item3 p span {
+    .classic-item-optical p span, .classic-item-functional p span {
       font-size: 48px;
       color: #AA0601;
       padding-right: 8px; }
       @media (max-width: 768px) {
-        .classic-item1 p span, .classic-item3 p span {
+        .classic-item-optical p span, .classic-item-functional p span {
           font-size: 40px; } }
 
-.classic-item2 {
+.classic-item-sunglasses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,7 +1378,7 @@ a {
       -ms-flex-align: center;
           align-items: center; }
   @media (max-width: 768px) {
-    .classic-item2 {
+    .classic-item-sunglasses {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -1385,36 +1387,38 @@ a {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
   @media (max-width: 375px) {
-    .classic-item2 {
+    .classic-item-sunglasses {
       position: relative; } }
-  .classic-item2 img {
-    width: 57%; }
+  .classic-item-sunglasses img {
+    width: 57%;
+    -o-object-fit: cover;
+       object-fit: cover; }
     @media (max-width: 768px) {
-      .classic-item2 img {
+      .classic-item-sunglasses img {
         width: 54%;
         height: 168px; } }
     @media (max-width: 375px) {
-      .classic-item2 img {
+      .classic-item-sunglasses img {
         width: 100%;
         height: 134px; } }
-  .classic-item2 p {
+  .classic-item-sunglasses p {
     width: 40%;
     font-size: 36px;
     font-weight: bold;
     color: #AA0601; }
     @media (max-width: 768px) {
-      .classic-item2 p {
+      .classic-item-sunglasses p {
         font-size: 28px; } }
     @media (max-width: 375px) {
-      .classic-item2 p {
+      .classic-item-sunglasses p {
         position: absolute;
         right: 50%; } }
-    .classic-item2 p span {
+    .classic-item-sunglasses p span {
       font-size: 48px;
       color: #AA0601;
       padding-right: 8px; }
       @media (max-width: 768px) {
-        .classic-item2 p span {
+        .classic-item-sunglasses p span {
           font-size: 40px; } }
 
 /*聯名設計鏡框*/
@@ -1651,23 +1655,22 @@ a {
     @media (max-width: 375px) {
       .FAQ h2 {
         font-size: 28px; } }
+  .FAQ h3 {
+    font-size: 32px;
+    font-weight: bold; }
+    @media (max-width: 375px) {
+      .FAQ h3 {
+        font-size: 20px; } }
 
-.glasses-quiz h3 {
-  font-size: 32px;
-  font-weight: bold; }
-  @media (max-width: 375px) {
-    .glasses-quiz h3 {
-      font-size: 20px; } }
-
-.glasses-quiz li h4 {
+.glasses-quiz h4 {
   font-size: 20px;
   font-weight: bold; }
   @media (max-width: 375px) {
-    .glasses-quiz li h4 {
+    .glasses-quiz h4 {
       font-size: 16px; } }
 
 @media (max-width: 375px) {
-  .glasses-quiz li p {
+  .glasses-quiz p {
     font-size: 14px;
     line-height: 21px;
     /*手機板p的空行用行高21px (mb-cel-21p)設定*/ } }
